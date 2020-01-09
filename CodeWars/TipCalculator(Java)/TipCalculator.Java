@@ -33,6 +33,7 @@ public class TipCalculator {
     try {
       var ratingEnum = ServiceRating.valueOf(rating.toUpperCase());
       switch(ratingEnum){
+        // Use multiple returns if it enhances readability - CC2E Chapter 17.1
         case TERRIBLE: 
             return Terrible_Tip;
         case POOR:

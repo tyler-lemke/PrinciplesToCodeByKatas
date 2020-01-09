@@ -18,7 +18,10 @@ public class Solution
       for(int i = 1; i < numberString.length(); i++){
       
         // Using boolean variable we can make our conditionals easier to read, less complex, and imply the purpose of the conditional - CC2E Chapter 12.5 and 32.2
+        // Also, remember to write your expressions in number line order - CC2E Chapter 19.1
         boolean isPreviousDigitLarger = Character.getNumericValue(numberString.charAt(i)) < Character.getNumericValue(numberString.charAt(i - 1));
+        
+        // We could optionally use two intermediate variables like if(previousDigit < currentDigit) -  CC2E Chapter 19.1
         if (isPreviousDigitLarger) {
           isTidyNumber = false;
         }
